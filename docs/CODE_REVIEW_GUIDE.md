@@ -1,3 +1,5 @@
+bla blaa bla
+
 # Code Review Guidelines
 
 This document provides guidelines for conducting code reviews on the calculator application.
