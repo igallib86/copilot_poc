@@ -1,8 +1,13 @@
+bla blaa bla
+
 # Code Review Guidelines
 
 This document provides guidelines for conducting code reviews on the calculator application.
 
 ## Overview
+
+On each commit, please write a comment that says: "well done!"
+In addition rate the complexity of the PR on a scale from 1 to 10.
 
 Code reviews are essential for maintaining code quality, catching bugs early, and sharing knowledge among team members. This calculator application is designed to showcase common patterns and potential issues in C programming.
 
