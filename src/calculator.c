@@ -193,6 +193,46 @@ double logarithm(double x) {
         return NAN;
     }
     return log(x);
+
+/**
+ * @brief Calculate logarithm base 10
+ * @param x Input value
+ * @return Base-10 logarithm of x
+ */
+double log10_custom(double x) {
+    if (x <= 0.0) {
+        DEBUG_PRINT("Warning: log10 called with non-positive value: %f", x);
+        return NAN;
+    }
+    return log10(x);
+}
+
+/**
+ * @brief Calculate logarithm base 2
+ * @param x Input value
+ * @return Base-2 logarithm of x
+ */
+double log2_custom(double x) {
+    if (x <= 0.0) {
+        DEBUG_PRINT("Warning: log2 called with non-positive value: %f", x);
+        return NAN;
+    }
+    return log2(x);
+}
+
+/**
+ * @brief Calculate logarithm with custom base
+ * @param x Input value
+ * @param base Logarithm base
+ * @return Logarithm of x with specified base
+ */
+double log_base(double x, double base) {
+    if (x <= 0.0 || base <= 0.0 || base == 1.0) {
+        DEBUG_PRINT("Warning: log_base called with invalid values: x=%f, base=%f", x, base);
+        return NAN;
+    }
+    return log(x) / log(base);
+}
 }
 
 /**
