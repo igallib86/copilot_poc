@@ -1,4 +1,3 @@
-bla blaa bla
 
 # Code Review Guidelines
 
